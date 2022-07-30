@@ -21,4 +21,20 @@ public class User {
         this.is = new DataInputStream(socket.getInputStream());
         this.uuid = UUID.randomUUID();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public UUID getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
+    }
 }
