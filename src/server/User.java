@@ -22,6 +22,30 @@ public class User {
         this.uuid = UUID.randomUUID();
     }
 
+    public Socket getSocket() {
+        return socket;
+    }
+
+    public void setSocket(Socket socket) {
+        this.socket = socket;
+    }
+
+    public DataInputStream getIs() {
+        return is;
+    }
+
+    public void setIs(DataInputStream is) {
+        this.is = is;
+    }
+
+    public DataOutputStream getOut() {
+        return out;
+    }
+
+    public void setOut(DataOutputStream out) {
+        this.out = out;
+    }
+
     public String getName() {
         return name;
     }
@@ -37,4 +61,5 @@ public class User {
     public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
+    
 }
